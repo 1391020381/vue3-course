@@ -20,6 +20,17 @@
 
 * 尺寸控制也可以用梯度变量的模式,不放在一起,
 
+# 按钮
+
+1. 基础按钮组件样式的开发
+2. 实现按钮不同维度组合的样式
+3. 组件的使用状态叠加
+
+- Default Primary Success Warn Danger
+
+* Contented Outlined
+* Enabled Disabled
+
 # 布局方案
 
 - 布局规范设计的三个准备点
