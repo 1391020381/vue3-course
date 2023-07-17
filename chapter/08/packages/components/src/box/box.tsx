@@ -8,7 +8,7 @@ export const Box = defineComponent({
   setup(props, { slots }) {
     return () => {
       return (
-        <div class={`${prefixName}-box ${props.class || ''}`}>
+        <div aaa="1111" class={`${prefixName}-box ${props.class || ''}`}>
           {slots?.default?.()}
         </div>
       );

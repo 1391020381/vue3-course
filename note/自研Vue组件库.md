@@ -1,3 +1,13 @@
+# Vue.js 3.x 组件库 开发要点
+
+- monorepo 管理组件代码
+- Vue.js 3.x 源文件的多种模块格式编译 单独编译 按需加载 \*.d.ts 文件
+- 基于 Less 开发 CSS 样式文件和独立编译 按需加载不同的 css 样式内容也要独立拆分。
+
+* monorepo 项目的依赖安装和管理 pnpm 安装依赖过后, packages 中 依赖也被安装了
+* 业务组件库子项目 (@my/business)里依赖了基础组件库的子项目(@my/components) 通过 pnpm 管理的 monorepo 项目方式,将依赖的 @my/components 子项目通过 "软链接"形式执向了真正的 components/\*目录
+* monorepo 里有 "软链接"实现子项目的 npm 模块依赖关系 我们可以放心拆分不同类型组件库,以及管理不同类型组件库的嵌套关系。
+
 # 组件库主题方案设计
 
 1. 颜色的设计规范
